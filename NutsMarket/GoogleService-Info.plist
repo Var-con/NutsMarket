@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>950515297815-ts4kclv12bgeso2stgbblsjj2ikegf98.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.950515297815-ts4kclv12bgeso2stgbblsjj2ikegf98</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDcuVf4IN6crVgipfm9WvOMdtnzS547d9U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>950515297815</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>No.NutsMarket</string>
+	<key>PROJECT_ID</key>
+	<string>nutsmarket-38abd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nutsmarket-38abd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:950515297815:ios:6a3df3abf02fc4c723f652</string>
+	<key>DATABASE_URL</key>
+	<string>https://nutsmarket-38abd.firebaseio.com</string>
+</dict>
+</plist>

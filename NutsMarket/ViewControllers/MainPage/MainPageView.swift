@@ -38,13 +38,14 @@ class MainPageView: UIViewController, MainPageViewInputProtocol {
         let registerVC = segue.destination as! RegisterScreenViewController
         let configurator: RegisterViewConfigurator = RegisterViewConfigurator()
         configurator.congigure(view: registerVC)
-        } else if segue.identifier == "marketViewSegue" {
-            
+        } else if segue.identifier == "marketSegue" {
+            let marketview = segue.destination as! MarketCollectionViewController
+            let configurator = MarketConfugurator()
+            configurator.configure(with: marketview)
         } else if segue.identifier == "forgotPasswordSegue" {
             let forgotPasswordView = segue.destination as! ForgotPasswordViewController
             let confifurator: ForgotPasswordPageViewConfigurator = ForgotPasswordPageViewConfigurator()
             confifurator.configure(with: forgotPasswordView)
-            
         }
     }
 

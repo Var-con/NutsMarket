@@ -7,6 +7,7 @@ target 'NutsMarket' do
 
   # Pods for NutsMarket
     pod 'Firebase/Auth'
-
+    pod 'Firebase/Database'
+    pod 'Firebase/Core'
 
 end

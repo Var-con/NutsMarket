@@ -13,6 +13,7 @@ protocol MainPageRouterProtocol {
     init(viewcontroller: MainPageView)
     func displayRegisterView()
     func displayMarketView()
+    func displayForgottenPasswordView()
 }
 
 class MainpageRouter: MainPageRouterProtocol {
@@ -32,6 +33,9 @@ class MainpageRouter: MainPageRouterProtocol {
         viewController.performSegue(withIdentifier: "marketSegue", sender: nil)
     }
     
+    func displayForgottenPasswordView() {
+        viewController.performSegue(withIdentifier: "forgotPasswordSegue", sender: nil)
+    }
     
     
     

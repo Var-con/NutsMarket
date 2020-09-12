@@ -34,7 +34,6 @@ class MainPageViewInteractor: MainPageViewInteractorInputProtocol {
         Auth.auth().signIn(withEmail: login, password: password) { (user, error) in
             if error == nil {
                 if user != nil {
-                    //добавить переход через роутер
                     self.presenter.displayMarketView()
                 }
             } else {

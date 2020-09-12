@@ -9,11 +9,13 @@
 import UIKit
 
 protocol MainPageViewInputProtocol: class {
+    func showAlert()
 }
 
 protocol MainPageViewOutputProtocol {
     func loginButtonPressed(with login: String, password: String)
     func displayRegisterView()
+    func displayForgottenPasswordView()
     init(view: MainPageViewInputProtocol)
 }
 
@@ -37,7 +39,12 @@ class MainPageView: UIViewController, MainPageViewInputProtocol {
         let configurator: RegisterViewConfigurator = RegisterViewConfigurator()
         configurator.congigure(view: registerVC)
         } else if segue.identifier == "marketViewSegue" {
-
+            
+        } else if segue.identifier == "forgotPasswordSegue" {
+            let forgotPasswordView = segue.destination as! ForgotPasswordViewController
+            let confifurator: ForgotPasswordPageViewConfigurator = ForgotPasswordPageViewConfigurator()
+            confifurator.configure(with: forgotPasswordView)
+            
         }
     }
 
@@ -50,8 +57,21 @@ class MainPageView: UIViewController, MainPageViewInputProtocol {
     }
     
     @IBAction func forgottenPasswordOutlet(_ sender: UIButton) {
+        presenter.displayForgottenPasswordView()
     }
     
+}
+
+extension MainPageView {
+    func showAlert() {
+        let alert = UIAlertController(title: "Авторизация не удалась",
+                                      message: "Проверьте вводимые данные",
+                                      preferredStyle: .actionSheet)
+        let okAction = UIAlertAction(title: "Ok",
+                                     style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
 }
 
 

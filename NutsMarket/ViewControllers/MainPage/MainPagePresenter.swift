@@ -10,6 +10,7 @@ import Foundation
 
 class MainPagePresenter: MainPageViewOutputProtocol {
     
+    
     unowned var view: MainPageViewInputProtocol
     var interactor: MainPageViewInteractorInputProtocol!
     var router: MainPageRouterProtocol!
@@ -26,6 +27,9 @@ class MainPagePresenter: MainPageViewOutputProtocol {
     func displayRegisterView() {
         router.displayRegisterView()
     }
+    func displayForgottenPasswordView() {
+        router.displayForgottenPasswordView()
+    }
 }
 
 
@@ -35,7 +39,7 @@ extension MainPagePresenter: MainPageViewInteractorOutputProtocol {
     }
     
     func displayErrorAlert() {
-        
+        view.showAlert()
     }
     
     

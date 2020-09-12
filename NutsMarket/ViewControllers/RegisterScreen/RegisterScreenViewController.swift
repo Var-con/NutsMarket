@@ -9,6 +9,8 @@
 import UIKit
 
 protocol RegisterScreenViewInputProtocol: class {
+    func displaySuccsesAlert()
+    func displayErrorAlert(_ title: String, text: String)
 }
 
 protocol RegisterScreenViewOutputProtocol {
@@ -19,21 +21,18 @@ protocol RegisterScreenViewOutputProtocol {
 
 class RegisterScreenViewController: UIViewController, RegisterScreenViewInputProtocol {
     
-    
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var secondNameTextField: UITextField!
     
-
+    
     var presenter: RegisterScreenViewOutputProtocol!
     let configurator: RegisterViewConfiguratorProtocol = RegisterViewConfigurator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configurator.congigure(view: self)
-        
     }
     
     @IBAction func registerButton(_ sender: UIButton) {
@@ -44,5 +43,28 @@ class RegisterScreenViewController: UIViewController, RegisterScreenViewInputPro
     @IBAction func closeButton(_ sender: Any) {
         dismiss(animated: true)
     }
+}
+
+extension RegisterScreenViewController {
+    func displaySuccsesAlert() {
+        let alert = UIAlertController(title: "Успешно создан",
+                                      message: "Пользователь успешно создан",
+                                      preferredStyle: .actionSheet)
+        let okAction = UIAlertAction(title: "Ok",
+                                     style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+    
+    func displayErrorAlert(_ title: String, text: String) {
+        let alert = UIAlertController(title: title,
+                                      message: text,
+                                      preferredStyle: .actionSheet)
+        let okAction = UIAlertAction(title: "Ok",
+                                     style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+    
     
 }

@@ -16,17 +16,16 @@ protocol RegisterViewInteractorInputProtocol: class {
 }
 
 protocol RegisterViewInteractorOutputProtocol: class {
+    func displaySuccsesfulAlert()
+    func displayErrorAlert(with code: String)
 }
 
 
 class RegisterViewInteractor: RegisterViewInteractorInputProtocol {
     
-    
-    
     unowned let presenter: RegisterViewInteractorOutputProtocol
     
     required init(presenter: RegisterViewInteractorOutputProtocol) {
-        
         self.presenter = presenter
     }
     
@@ -35,12 +34,12 @@ class RegisterViewInteractor: RegisterViewInteractorInputProtocol {
                                password: password) { (user, error) in
                                 if error == nil {
                                     if user != nil {
-                                        //отобразить алерт с уведомлением о том что успешно создан
+                                        self.presenter.displaySuccsesfulAlert()
                                     }
                                 } else {
                                     print(error!.localizedDescription)
+                                    self.presenter.displayErrorAlert(with: error!.localizedDescription)
                                 }
         }
     }
-    
 }

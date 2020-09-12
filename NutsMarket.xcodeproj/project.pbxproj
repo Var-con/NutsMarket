@@ -15,12 +15,18 @@
 		B31B50A725080500004954CD /* RegisterViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B50A625080500004954CD /* RegisterViewInteractor.swift */; };
 		B31B50A925080516004954CD /* RegisterViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B50A825080516004954CD /* RegisterViewConfigurator.swift */; };
 		B31B50AB2508E935004954CD /* MainPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B50AA2508E935004954CD /* MainPageRouter.swift */; };
+		B38DBF0E2509F94200613EA3 /* ForgotenPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DBF0D2509F94200613EA3 /* ForgotenPasswordPresenter.swift */; };
+		B38DBF102509F95600613EA3 /* ForgotPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DBF0F2509F95600613EA3 /* ForgotPasswordInteractor.swift */; };
+		B38DBF122509F96900613EA3 /* ForgotPasswordConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DBF112509F96900613EA3 /* ForgotPasswordConfigurator.swift */; };
+		B38DBF1A250A152600613EA3 /* NutsMarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DBF19250A152600613EA3 /* NutsMarketTests.swift */; };
 		B3CA18722504BCA8000C8578 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3CA18712504BCA8000C8578 /* GoogleService-Info.plist */; };
 		B3CA18742504BF63000C8578 /* RegisterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA18732504BF63000C8578 /* RegisterScreenViewController.swift */; };
 		B3CA18762504BF81000C8578 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA18752504BF81000C8578 /* ForgotPasswordViewController.swift */; };
 		B3CA18782504DA2F000C8578 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA18772504DA2F000C8578 /* ProfileViewController.swift */; };
 		B3CA187A2504DA93000C8578 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA18792504DA93000C8578 /* DetailTableViewController.swift */; };
 		B3CA187C2504DBC6000C8578 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA187B2504DBC6000C8578 /* ImageTableViewCell.swift */; };
+		B3E7C547250CA4440007F08B /* NutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7C546250CA4440007F08B /* NutModel.swift */; };
+		B3E7C549250CA4550007F08B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7C548250CA4550007F08B /* User.swift */; };
 		B3EFF8B624F82C7B00589626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EFF8B524F82C7B00589626 /* AppDelegate.swift */; };
 		B3EFF8B824F82C7B00589626 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EFF8B724F82C7B00589626 /* SceneDelegate.swift */; };
 		B3EFF8BA24F82C7B00589626 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EFF8B924F82C7B00589626 /* MainPageView.swift */; };
@@ -29,6 +35,16 @@
 		B3EFF8C224F82C7D00589626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EFF8C024F82C7D00589626 /* LaunchScreen.storyboard */; };
 		B3EFF8CA24F82FC800589626 /* MarketCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EFF8C924F82FC800589626 /* MarketCollectionViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B38DBF1C250A152600613EA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3EFF8AA24F82C7B00589626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3EFF8B124F82C7B00589626;
+			remoteInfo = NutsMarket;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		918A118A6CE87DF5528F1373 /* Pods-NutsMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutsMarket.release.xcconfig"; path = "Target Support Files/Pods-NutsMarket/Pods-NutsMarket.release.xcconfig"; sourceTree = "<group>"; };
@@ -39,12 +55,20 @@
 		B31B50A625080500004954CD /* RegisterViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewInteractor.swift; sourceTree = "<group>"; };
 		B31B50A825080516004954CD /* RegisterViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewConfigurator.swift; sourceTree = "<group>"; };
 		B31B50AA2508E935004954CD /* MainPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageRouter.swift; sourceTree = "<group>"; };
+		B38DBF0D2509F94200613EA3 /* ForgotenPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotenPasswordPresenter.swift; sourceTree = "<group>"; };
+		B38DBF0F2509F95600613EA3 /* ForgotPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordInteractor.swift; sourceTree = "<group>"; };
+		B38DBF112509F96900613EA3 /* ForgotPasswordConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordConfigurator.swift; sourceTree = "<group>"; };
+		B38DBF17250A152600613EA3 /* NutsMarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutsMarketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38DBF19250A152600613EA3 /* NutsMarketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutsMarketTests.swift; sourceTree = "<group>"; };
+		B38DBF1B250A152600613EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3CA18712504BCA8000C8578 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B3CA18732504BF63000C8578 /* RegisterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewController.swift; sourceTree = "<group>"; };
 		B3CA18752504BF81000C8578 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		B3CA18772504DA2F000C8578 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B3CA18792504DA93000C8578 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		B3CA187B2504DBC6000C8578 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		B3E7C546250CA4440007F08B /* NutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutModel.swift; sourceTree = "<group>"; };
+		B3E7C548250CA4550007F08B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B3EFF8B224F82C7B00589626 /* NutsMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutsMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EFF8B524F82C7B00589626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3EFF8B724F82C7B00589626 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B38DBF14250A152600613EA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3EFF8AF24F82C7B00589626 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,6 +133,26 @@
 			path = RegisterScreen;
 			sourceTree = "<group>";
 		};
+		B38DBF0C2509F92A00613EA3 /* ForgottenPasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				B3CA18752504BF81000C8578 /* ForgotPasswordViewController.swift */,
+				B38DBF0D2509F94200613EA3 /* ForgotenPasswordPresenter.swift */,
+				B38DBF0F2509F95600613EA3 /* ForgotPasswordInteractor.swift */,
+				B38DBF112509F96900613EA3 /* ForgotPasswordConfigurator.swift */,
+			);
+			path = ForgottenPasswordView;
+			sourceTree = "<group>";
+		};
+		B38DBF18250A152600613EA3 /* NutsMarketTests */ = {
+			isa = PBXGroup;
+			children = (
+				B38DBF19250A152600613EA3 /* NutsMarketTests.swift */,
+				B38DBF1B250A152600613EA3 /* Info.plist */,
+			);
+			path = NutsMarketTests;
+			sourceTree = "<group>";
+		};
 		B3CA187D2504DD5A000C8578 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,7 +168,7 @@
 			children = (
 				B31B509C2507F1E3004954CD /* MainPage */,
 				B31B50A325080379004954CD /* RegisterScreen */,
-				B3CA18752504BF81000C8578 /* ForgotPasswordViewController.swift */,
+				B38DBF0C2509F92A00613EA3 /* ForgottenPasswordView */,
 				B3EFF8C924F82FC800589626 /* MarketCollectionViewController.swift */,
 				B3CA187B2504DBC6000C8578 /* ImageTableViewCell.swift */,
 				B3CA18792504DA93000C8578 /* DetailTableViewController.swift */,
@@ -135,10 +186,20 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		B3E7C54A250CA45A0007F08B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3E7C546250CA4440007F08B /* NutModel.swift */,
+				B3E7C548250CA4550007F08B /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B3EFF8A924F82C7B00589626 = {
 			isa = PBXGroup;
 			children = (
 				B3EFF8B424F82C7B00589626 /* NutsMarket */,
+				B38DBF18250A152600613EA3 /* NutsMarketTests */,
 				B3EFF8B324F82C7B00589626 /* Products */,
 				75B289CAC2E83ECBD12AEC2A /* Pods */,
 				B8FF7E1020FDDCE537B52CAE /* Frameworks */,
@@ -149,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				B3EFF8B224F82C7B00589626 /* NutsMarket.app */,
+				B38DBF17250A152600613EA3 /* NutsMarketTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +218,7 @@
 		B3EFF8B424F82C7B00589626 /* NutsMarket */ = {
 			isa = PBXGroup;
 			children = (
+				B3E7C54A250CA45A0007F08B /* Models */,
 				B3CA187E2504DD73000C8578 /* ViewControllers */,
 				B3CA187D2504DD5A000C8578 /* SupportingFiles */,
 				B3CA187F2504DD8A000C8578 /* Storyboards */,
@@ -176,6 +239,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B38DBF16250A152600613EA3 /* NutsMarketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B38DBF20250A152600613EA3 /* Build configuration list for PBXNativeTarget "NutsMarketTests" */;
+			buildPhases = (
+				B38DBF13250A152600613EA3 /* Sources */,
+				B38DBF14250A152600613EA3 /* Frameworks */,
+				B38DBF15250A152600613EA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B38DBF1D250A152600613EA3 /* PBXTargetDependency */,
+			);
+			name = NutsMarketTests;
+			productName = NutsMarketTests;
+			productReference = B38DBF17250A152600613EA3 /* NutsMarketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B3EFF8B124F82C7B00589626 /* NutsMarket */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3EFF8C624F82C7D00589626 /* Build configuration list for PBXNativeTarget "NutsMarket" */;
@@ -201,10 +282,14 @@
 		B3EFF8AA24F82C7B00589626 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Stanislav Klimov";
 				TargetAttributes = {
+					B38DBF16250A152600613EA3 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = B3EFF8B124F82C7B00589626;
+					};
 					B3EFF8B124F82C7B00589626 = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -224,11 +309,19 @@
 			projectRoot = "";
 			targets = (
 				B3EFF8B124F82C7B00589626 /* NutsMarket */,
+				B38DBF16250A152600613EA3 /* NutsMarketTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B38DBF15250A152600613EA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3EFF8B024F82C7B00589626 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,6 +378,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B38DBF13250A152600613EA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38DBF1A250A152600613EA3 /* NutsMarketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3EFF8AE24F82C7B00589626 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,18 +398,31 @@
 				B3CA187C2504DBC6000C8578 /* ImageTableViewCell.swift in Sources */,
 				B31B50A725080500004954CD /* RegisterViewInteractor.swift in Sources */,
 				B3EFF8B624F82C7B00589626 /* AppDelegate.swift in Sources */,
+				B3E7C547250CA4440007F08B /* NutModel.swift in Sources */,
 				B31B50A5250804F1004954CD /* RegisterViewPresenter.swift in Sources */,
 				B3CA187A2504DA93000C8578 /* DetailTableViewController.swift in Sources */,
+				B38DBF102509F95600613EA3 /* ForgotPasswordInteractor.swift in Sources */,
 				B31B509E2507F24F004954CD /* MainPagePresenter.swift in Sources */,
 				B3CA18782504DA2F000C8578 /* ProfileViewController.swift in Sources */,
 				B3EFF8B824F82C7B00589626 /* SceneDelegate.swift in Sources */,
+				B38DBF0E2509F94200613EA3 /* ForgotenPasswordPresenter.swift in Sources */,
 				B31B50A22507FCD0004954CD /* MainPageViewConfigurator.swift in Sources */,
 				B31B50A02507F2E0004954CD /* MainPageViewControllerInteractor.swift in Sources */,
 				B3CA18742504BF63000C8578 /* RegisterScreenViewController.swift in Sources */,
+				B38DBF122509F96900613EA3 /* ForgotPasswordConfigurator.swift in Sources */,
+				B3E7C549250CA4550007F08B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B38DBF1D250A152600613EA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3EFF8B124F82C7B00589626 /* NutsMarket */;
+			targetProxy = B38DBF1C250A152600613EA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B3EFF8BB24F82C7B00589626 /* Main.storyboard */ = {
@@ -330,6 +444,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B38DBF1E250A152600613EA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3DYTYX5S2;
+				INFOPLIST_FILE = NutsMarketTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = No.NutsMarketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NutsMarket.app/NutsMarket";
+			};
+			name = Debug;
+		};
+		B38DBF1F250A152600613EA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3DYTYX5S2;
+				INFOPLIST_FILE = NutsMarketTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = No.NutsMarketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NutsMarket.app/NutsMarket";
+			};
+			name = Release;
+		};
 		B3EFF8C424F82C7D00589626 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,6 +641,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B38DBF20250A152600613EA3 /* Build configuration list for PBXNativeTarget "NutsMarketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38DBF1E250A152600613EA3 /* Debug */,
+				B38DBF1F250A152600613EA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B3EFF8AD24F82C7B00589626 /* Build configuration list for PBXProject "NutsMarket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

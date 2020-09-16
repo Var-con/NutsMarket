@@ -37,17 +37,14 @@ class DetailViewInteractor: DetailViewInteractorInputProtocol {
     }
     
     func addNutToCart(with count: String) {
-        guard let user = Auth.auth().currentUser else { return }
-        guard let countInt = Int(count) else { return }
-        let ref = Database.database().reference(withPath: "\(user.uid)").child("cart").child("\(nut.name)")
-        ref.setValue(["nutName" : nut.name, "nutPrice" : nut.price, "nutCount" : countInt])
-
+        guard let intCount = Int(count) else { return }
+        CartManager.shared.addNutToCart(nut: nut, count: intCount)
     }
     
+    
     func getBoolForCartImage() {
-        let bool = CartManager.shared.getInformationAboutCartEmptyness()
-        
+        CartManager.shared.getInformationAboutCartEmptyness { bool in
             self.presenter.displayCartImage(with: bool)
-        
+        }
     }
 }

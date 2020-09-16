@@ -20,14 +20,14 @@ class CartManager {
         ref.setValue(["nutName" : nut.name, "nutPrice" : nut.price, "nutCount" : count])
     }
     
-    func getInformationAboutCartEmptyness() -> Bool {
-         guard let user = Auth.auth().currentUser else { return false }
+    func getInformationAboutCartEmptyness(complitionHandler: @escaping (_ exist: Bool) -> Void) {
+         guard let user = Auth.auth().currentUser else { return }
             var bool = false
             let ref = Database.database().reference(withPath: "\(user.uid)").child("cart")
             ref.observe(.value) { snapshot in
                 bool = snapshot.exists()
+                complitionHandler(bool)
                 }
-        return bool
         }
     
 }

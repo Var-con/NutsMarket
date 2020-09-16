@@ -11,6 +11,7 @@ import Foundation
 protocol MarketRouterProtocol {
     init(view: MarketCollectionViewController)
     func openDetailVC(with nut: NutItem)
+    func openOrderPage()
 }
 
 class MarketRouter: MarketRouterProtocol {
@@ -23,5 +24,9 @@ class MarketRouter: MarketRouterProtocol {
     
     func openDetailVC(with nut: NutItem) {
         view.performSegue(withIdentifier: "detailsSegue", sender: nut)
+    }
+    
+    func openOrderPage() {
+        view.performSegue(withIdentifier: "cartStorage", sender: nil)
     }
 }

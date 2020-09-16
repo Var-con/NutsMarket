@@ -16,6 +16,7 @@
 		B31B50A925080516004954CD /* RegisterViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B50A825080516004954CD /* RegisterViewConfigurator.swift */; };
 		B31B50AB2508E935004954CD /* MainPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B50AA2508E935004954CD /* MainPageRouter.swift */; };
 		B34D535F2511EB1C000442DE /* CartServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D535E2511EB1C000442DE /* CartServices.swift */; };
+		B34D53612511F9B6000442DE /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D53602511F9B6000442DE /* OrderTableViewController.swift */; };
 		B34F04FA250CFD3700C3AF08 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34F04F9250CFD3700C3AF08 /* DetailsViewController.swift */; };
 		B34F04FD250CFE8400C3AF08 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34F04FC250CFE8400C3AF08 /* DetailPresenter.swift */; };
 		B34F04FF250CFEFF00C3AF08 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34F04FE250CFEFF00C3AF08 /* DetailInteractor.swift */; };
@@ -64,6 +65,7 @@
 		B31B50A825080516004954CD /* RegisterViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewConfigurator.swift; sourceTree = "<group>"; };
 		B31B50AA2508E935004954CD /* MainPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageRouter.swift; sourceTree = "<group>"; };
 		B34D535E2511EB1C000442DE /* CartServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartServices.swift; sourceTree = "<group>"; };
+		B34D53602511F9B6000442DE /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderTableViewController.swift; path = NutsMarket/ViewControllers/OrderTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		B34F04F9250CFD3700C3AF08 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		B34F04FC250CFE8400C3AF08 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		B34F04FE250CFEFF00C3AF08 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				B3E7C54B250CC9C10007F08B /* MarketCollection */,
 				B3E7C554250CD6D80007F08B /* ProductCollectionViewCell.swift */,
 				B34F04FB250CFE6D00C3AF08 /* DetailView */,
+				B34D53602511F9B6000442DE /* OrderTableViewController.swift */,
 				B3CA18772504DA2F000C8578 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
@@ -446,6 +449,7 @@
 				B3E7C54F250CC9E10007F08B /* MarketInteractor.swift in Sources */,
 				B31B50A5250804F1004954CD /* RegisterViewPresenter.swift in Sources */,
 				B38DBF102509F95600613EA3 /* ForgotPasswordInteractor.swift in Sources */,
+				B34D53612511F9B6000442DE /* OrderTableViewController.swift in Sources */,
 				B31B509E2507F24F004954CD /* MainPagePresenter.swift in Sources */,
 				B3CA18782504DA2F000C8578 /* ProfileViewController.swift in Sources */,
 				B3EFF8B824F82C7B00589626 /* SceneDelegate.swift in Sources */,

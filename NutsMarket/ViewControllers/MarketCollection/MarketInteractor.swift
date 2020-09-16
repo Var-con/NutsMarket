@@ -12,10 +12,12 @@ import FirebaseDatabase
 protocol MarketInteractorInputProtocol: class {
     init(presenter: MarketInteractorOutputProtocol)
     func fetchNuts()
+    func getCartImage()
 }
 
 protocol MarketInteractorOutputProtocol: class {
     func nutsCollectionDidReceive(nuts: [NutItem])
+    func displayCartImage(with bool: Bool)
 }
 
 class MarketInteractor: MarketInteractorInputProtocol {
@@ -37,6 +39,12 @@ class MarketInteractor: MarketInteractorInputProtocol {
             }
             
             self.presenter.nutsCollectionDidReceive(nuts: nuts)
+        }
+    }
+    
+    func getCartImage() {
+        CartManager.shared.getInformationAboutCartEmptyness { (bool) in
+            self.presenter.displayCartImage(with: bool)
         }
     }
     

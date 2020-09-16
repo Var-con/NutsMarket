@@ -44,6 +44,15 @@ class MarketPresenter: MarketOutputProtocol {
         guard let nutItem = nut else { return }
         router.openDetailVC(with: nutItem)
     }
+    
+    func showOrderPage() {
+        router.openOrderPage()
+    }
+    
+    func setCartImage() {
+        interactor.getCartImage()
+        
+    }
 }
 
 extension MarketPresenter: MarketInteractorOutputProtocol {
@@ -51,4 +60,10 @@ extension MarketPresenter: MarketInteractorOutputProtocol {
         self.nuts = nuts
         view.reloadData()
     }
+    
+    func displayCartImage(with bool: Bool) {
+        view.displayCartImage(with: bool)
+    }
+    
+    
 }

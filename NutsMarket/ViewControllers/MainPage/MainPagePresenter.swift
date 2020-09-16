@@ -19,7 +19,9 @@ class MainPagePresenter: MainPageViewOutputProtocol {
     required init(view: MainPageViewInputProtocol) {
         self.view = view
     }
-    
+    func checkPreviouslyEntry() {
+        interactor.checkPreviouslyEntry()
+    }
     func loginButtonPressed(with login: String, password: String) {
         interactor.authInApp(with: login, password: password)
     }

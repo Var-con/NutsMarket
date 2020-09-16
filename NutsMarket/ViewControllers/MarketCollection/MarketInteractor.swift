@@ -33,7 +33,6 @@ class MarketInteractor: MarketInteractorInputProtocol {
         ref.observe(.value) { (snapshot) in
             for item in snapshot.children {
                 let nut = NutItem(snapshot: item as! FirebaseDatabase.DataSnapshot)
-                print(nut)
                 nuts.append(nut)
             }
             

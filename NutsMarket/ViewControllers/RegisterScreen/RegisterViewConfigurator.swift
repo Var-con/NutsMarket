@@ -20,3 +20,4 @@ class RegisterViewConfigurator: RegisterViewConfiguratorProtocol {
         presenter.interactor = interactor
     }
 }
+

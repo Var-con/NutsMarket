@@ -13,7 +13,6 @@ class MarketPresenter: MarketOutputProtocol {
     
     unowned var view: MarketInputProtocol
     var nutsCount: Int {
-        print(nuts.count)
         return nuts.count
     }
     var nut: NutItem? {

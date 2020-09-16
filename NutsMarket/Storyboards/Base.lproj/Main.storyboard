@@ -163,7 +163,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Nuts Market" id="AWB-Lc-ZAr"/>
+                    <navigationItem key="navigationItem" title="Nuts Market" largeTitleDisplayMode="always" id="AWB-Lc-ZAr"/>
                     <connections>
                         <outlet property="loginTextFieldOutlet" destination="rIh-cO-094" id="w71-EQ-ckp"/>
                         <outlet property="passwordTextFieldOutlet" destination="HwP-rM-65U" id="1xv-w1-u4P"/>
@@ -374,6 +374,34 @@
             </objects>
             <point key="canvasLocation" x="3282.608695652174" y="114.50892857142857"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="IC1-YE-3Fa">
+            <objects>
+                <tableViewController id="f24-v2-xG0" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Mhb-9x-uoS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="88" id="MIE-Gn-EqA">
+                                <rect key="frame" x="16" y="55.5" width="343" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MIE-Gn-EqA" id="MaH-Zy-XO6">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="88"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="f24-v2-xG0" id="vUS-0t-gNQ"/>
+                            <outlet property="delegate" destination="f24-v2-xG0" id="F1F-ck-7hq"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lNS-Ed-EPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3532" y="1071.8140929535234"/>
+        </scene>
         <!--Details View Controller-->
         <scene sceneID="TQZ-wW-bQr">
             <objects>
@@ -480,8 +508,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rHD-sk-Ykl"/>
                     </view>
-                    <navigationItem key="navigationItem" id="O6E-Ou-COu"/>
+                    <navigationItem key="navigationItem" id="O6E-Ou-COu">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="6FC-S4-MkR">
+                            <connections>
+                                <action selector="cartButton:" destination="22C-KV-TaV" id="nYv-t2-HZP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="cartButtonOutlet" destination="6FC-S4-MkR" id="9ei-CX-7YY"/>
                         <outlet property="countTextField" destination="SFa-Ps-og6" id="C48-Q7-2wd"/>
                         <outlet property="descriptionLabel" destination="WcM-tS-jy0" id="9tt-SP-4S0"/>
                         <outlet property="imageView" destination="2an-AK-94m" id="eJo-qk-YVK"/>

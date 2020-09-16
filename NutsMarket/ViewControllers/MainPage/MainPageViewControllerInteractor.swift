@@ -16,6 +16,7 @@ protocol MainPageViewInteractorOutputProtocol: class {
 
 protocol MainPageViewInteractorInputProtocol: class {
     func authInApp(with login: String, password: String)
+    func checkPreviouslyEntry()
     init(presenter: MainPageViewInteractorOutputProtocol)
 }
 
@@ -39,8 +40,15 @@ class MainPageViewInteractor: MainPageViewInteractorInputProtocol {
             } else {
                 guard let error = error else { return }
                 print(error.localizedDescription)
-                //обработка ошибки в вью через презентер
                 self.presenter.displayErrorAlert()
+            }
+        }
+    }
+    
+    func checkPreviouslyEntry() {
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user != nil {
+                self.presenter.displayMarketView()
             }
         }
     }

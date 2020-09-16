@@ -16,6 +16,7 @@ protocol MainPageViewOutputProtocol {
     func loginButtonPressed(with login: String, password: String)
     func displayRegisterView()
     func displayForgottenPasswordView()
+    func checkPreviouslyEntry()
     init(view: MainPageViewInputProtocol)
 }
 
@@ -31,6 +32,7 @@ class MainPageView: UIViewController, MainPageViewInputProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         configurator.configure(with: self)
+        presenter.checkPreviouslyEntry()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -20,14 +20,19 @@ class DetailsViewPresenter: DetailsViewControllerOutputProtocol {
     }
     
     func addToCartNut(with count: String) {
-        interactor.addNutToCart(count: count)
+        interactor.addNutToCart(with: count)
     }
 }
 
 extension DetailsViewPresenter: DetailViewInteractorOutputProtocol {
+    func displayCartImage(with bool: Bool) {
+        view.displayCartImage(with: bool)
+    }
+    
     func displayNutInfo(with nut: NutItem) {
         view.displayInformation(name: nut.name,
                                 description: nut.description,
                                 price: nut.price)
+        
     }
 }

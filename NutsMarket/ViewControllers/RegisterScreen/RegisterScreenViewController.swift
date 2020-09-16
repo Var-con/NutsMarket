@@ -32,7 +32,6 @@ class RegisterScreenViewController: UIViewController, RegisterScreenViewInputPro
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configurator.congigure(view: self)
     }
     
     @IBAction func registerButton(_ sender: UIButton) {

@@ -10,6 +10,7 @@ import UIKit
 
 protocol DetailsViewControllerInputProtocol: class {
     func displayInformation(name: String, description: String, price: Int)
+    func displayCartImage(with bool: Bool)
 }
 
 protocol DetailsViewControllerOutputProtocol {
@@ -24,6 +25,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet var countTextField: UITextField!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
+    @IBOutlet var cartButtonOutlet: UIBarButtonItem!
     var presenter: DetailsViewControllerOutputProtocol!
     
     
@@ -37,6 +39,8 @@ class DetailsViewController: UIViewController {
         guard let count = countTextField.text else { return }
         presenter.addToCartNut(with: count)
     }
+    @IBAction func cartButton(_ sender: UIBarButtonItem) {
+    }
     
 }
 
@@ -45,5 +49,14 @@ extension DetailsViewController: DetailsViewControllerInputProtocol {
         nameLabel.text = name
         descriptionLabel.text = description
         priceLabel.text = "Цена за килограмм: \(price)"
+    }
+    
+    func displayCartImage(with bool: Bool) {
+        print(bool)
+        if bool {
+            cartButtonOutlet.image = UIImage(systemName: "cart.fill")
+        } else {
+            cartButtonOutlet.image = UIImage(systemName: "cart")
+        }
     }
 }

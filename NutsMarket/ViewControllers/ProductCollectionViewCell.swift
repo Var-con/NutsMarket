@@ -18,6 +18,8 @@ class ProductCollectionViewCell: UICollectionViewCell {
         
         nameLabel.text = nut?.name 
         priceLabel.text = "\(nut?.price ?? 0)"
+        guard let data = ImageManager.shared.getImageData(from: nut?.imageUrl) else { return }
+        imageOutlet.image = UIImage(data: data)
       }
 
 }

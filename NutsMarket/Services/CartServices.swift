@@ -30,4 +30,18 @@ class CartManager {
                 }
         }
     
+    
+    func getOrderFromCart() -> [OrderNut]{
+        var orderedNuts: [OrderNut] = []
+        guard let user = Auth.auth().currentUser else { return [] }
+        let ref = Database.database().reference(withPath: "\(user.uid)").child("cart")
+        ref.observe(.value) { (dataSnapshot) in
+            for item in dataSnapshot.children {
+                let nut = OrderNut(snapshot: item as! FirebaseDatabase.DataSnapshot)
+                orderedNuts.append(nut)
+            }
+        }
+        return orderedNuts
+    }
+    
 }

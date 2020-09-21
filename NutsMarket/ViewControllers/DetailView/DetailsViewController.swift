@@ -9,7 +9,7 @@
 import UIKit
 
 protocol DetailsViewControllerInputProtocol: class {
-    func displayInformation(name: String, description: String, price: Int)
+    func displayInformation(name: String, description: String, price: Int, imageData: Data)
     func displayCartImage(with bool: Bool)
 }
 
@@ -17,6 +17,7 @@ protocol DetailsViewControllerOutputProtocol {
     init(view: DetailsViewControllerInputProtocol)
     func setupScreen()
     func addToCartNut(with count: String)
+    func displayOrderView()
 }
 
 class DetailsViewController: UIViewController {
@@ -40,15 +41,26 @@ class DetailsViewController: UIViewController {
         presenter.addToCartNut(with: count)
     }
     @IBAction func cartButton(_ sender: UIBarButtonItem) {
+        presenter.displayOrderView()
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "cartStorageFromDetails" {
+            let orderVC = segue.destination as! OrderTableViewController
+            let configurator = OrderViewConfigurator()
+            configurator.configure(with: orderVC)
+        }
     }
     
 }
 
 extension DetailsViewController: DetailsViewControllerInputProtocol {
-    func displayInformation(name: String, description: String, price: Int) {
+    func displayInformation(name: String, description: String, price: Int, imageData: Data) {
         nameLabel.text = name
         descriptionLabel.text = description
         priceLabel.text = "Цена за килограмм: \(price)"
+        imageView.image = UIImage(data: imageData)
     }
     
     func displayCartImage(with bool: Bool) {

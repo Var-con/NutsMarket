@@ -34,3 +34,18 @@ struct NutItem {
     }
     
 }
+
+
+struct OrderNut {
+    let nutName: String
+    let nutPrice: Int
+    let nutCount: Int
+    
+    init(snapshot: DataSnapshot) {
+        let snapshotValue = snapshot.value as! [String : AnyObject]
+        
+        nutName = snapshotValue["nutName"] as! String
+        nutPrice = snapshotValue["nutPrice"] as! Int
+        nutCount = snapshotValue["nutCount"] as! Int
+    }
+}

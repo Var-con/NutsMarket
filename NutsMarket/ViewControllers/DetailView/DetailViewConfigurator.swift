@@ -17,8 +17,10 @@ class DetailViewConfigurator: DetailViewConfiguratorProtocol {
     func configure(with view: DetailsViewController, and nut: NutItem) {
         let presenter = DetailsViewPresenter(view: view)
         let interactor = DetailViewInteractor(presenter: presenter, and: nut)
+        let router = DetailViewRouter(view: view)
         view.presenter = presenter
         presenter.interactor = interactor
+        presenter.router = router
     }
 }
 

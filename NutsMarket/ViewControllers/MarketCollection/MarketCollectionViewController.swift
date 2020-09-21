@@ -62,7 +62,9 @@ class MarketCollectionViewController: UICollectionViewController {
         let configurator = DetailViewConfigurator()
         configurator.configure(with: detailVC, and: sender as! NutItem)
         } else if segue.identifier == "cartStorage" {
-//            let orderVC = segue.destination as! OrderTableViewController
+            let orderVC = segue.destination as! OrderTableViewController
+            let configurator = OrderViewConfigurator()
+            configurator.configure(with: orderVC)
         }
     }
     

@@ -12,6 +12,7 @@ class DetailsViewPresenter: DetailsViewControllerOutputProtocol {
     
     unowned var view: DetailsViewControllerInputProtocol
     var interactor: DetailViewInteractorInputProtocol!
+    var router: DetailViewRouter!
     required init(view: DetailsViewControllerInputProtocol) {
         self.view = view
     }
@@ -22,6 +23,10 @@ class DetailsViewPresenter: DetailsViewControllerOutputProtocol {
     func addToCartNut(with count: String) {
         interactor.addNutToCart(with: count)
     }
+    
+    func displayOrderView() {
+        router.openOrderView()
+    }
 }
 
 extension DetailsViewPresenter: DetailViewInteractorOutputProtocol {
@@ -29,10 +34,11 @@ extension DetailsViewPresenter: DetailViewInteractorOutputProtocol {
         view.displayCartImage(with: bool)
     }
     
-    func displayNutInfo(with nut: NutItem) {
+    func displayNutInfo(with nut: NutItem, imageData: Data) {
         view.displayInformation(name: nut.name,
                                 description: nut.description,
-                                price: nut.price)
+                                price: nut.price,
+                                imageData: imageData)
         
     }
 }

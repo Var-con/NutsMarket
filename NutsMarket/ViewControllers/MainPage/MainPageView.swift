@@ -42,6 +42,7 @@ class MainPageView: UIViewController, MainPageViewInputProtocol {
         configurator.congigure(view: registerVC)
         } else if segue.identifier == "marketSegue" {
             let marketview = segue.destination as! MarketCollectionViewController
+            
             let configurator = MarketConfugurator()
             configurator.configure(with: marketview)
         } else if segue.identifier == "forgotPasswordSegue" {

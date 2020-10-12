@@ -27,8 +27,11 @@ class OrderProductTableViewCell: UITableViewCell {
     
     func configure(with orderedNut: OrderNut?) {
         productNameLabel.text = orderedNut?.nutName
-        productCountLabel.text = ("\(String(describing: orderedNut?.nutCount))")
-        productPriceLabel.text = ("\(String(describing: orderedNut?.nutPrice))")
+        productCountLabel.text = ("Количество: \((orderedNut?.nutCount ?? 0)) кг.")
+        productPriceLabel.text = ("Цена: \(orderedNut?.nutPrice ?? 0) руб.")
+        
+        guard let imageData = ImageManager.shared.getImageData(from: orderedNut?.imageUrl) else { return }
+        productImage.image = UIImage(data: imageData)
     }
 
 }

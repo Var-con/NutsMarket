@@ -18,6 +18,7 @@ protocol DetailsViewControllerOutputProtocol {
     func setupScreen()
     func addToCartNut(with count: String)
     func displayOrderView()
+    func setCartImage()
 }
 
 class DetailsViewController: UIViewController {
@@ -33,6 +34,12 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.setupScreen()
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.setCartImage()
     }
     
     
@@ -64,7 +71,6 @@ extension DetailsViewController: DetailsViewControllerInputProtocol {
     }
     
     func displayCartImage(with bool: Bool) {
-        print(bool)
         if bool {
             cartButtonOutlet.image = UIImage(systemName: "cart.fill")
         } else {

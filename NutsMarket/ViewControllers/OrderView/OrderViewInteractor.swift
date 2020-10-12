@@ -15,28 +15,26 @@ protocol OrderViewInteractorInputProtocol: class {
 }
 
 protocol OrderViewInteractorOutputProtocol: class {
-    func nutsOrderedListDidReceive(nuts: [OrderNut])
     
+    func nutsOrderedListDidReceive(nuts: [OrderNut])
 }
 
 
 class OrderViewInteractor: OrderViewInteractorInputProtocol {
     
-    unowned var presenter: OrderViewInteractorOutputProtocol
-    
+    weak var presenter: OrderViewInteractorOutputProtocol?
     
     required init(presenter: OrderViewInteractorOutputProtocol) {
         self.presenter = presenter
     }
 
     func getOrderList() {
-
-        let orderedNuts = CartManager.shared.getOrderFromCart()
-        
-        self.presenter.nutsOrderedListDidReceive(nuts: orderedNuts)
-        
+        CartManager.shared.getOrderFromCart { (orderedNuts) in
+            if self.presenter != nil {
+                self.presenter!.nutsOrderedListDidReceive(nuts: orderedNuts)
+            }
+        }
     }
-    
     
     
 }

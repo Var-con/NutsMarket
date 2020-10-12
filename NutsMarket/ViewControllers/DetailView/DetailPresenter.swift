@@ -20,6 +20,10 @@ class DetailsViewPresenter: DetailsViewControllerOutputProtocol {
         interactor.displayInformation()
     }
     
+    func setCartImage() {
+        interactor.getCartImage()
+    }
+    
     func addToCartNut(with count: String) {
         interactor.addNutToCart(with: count)
     }

@@ -14,6 +14,7 @@ protocol DetailViewInteractorInputProtocol: class {
     func displayInformation()
     func addNutToCart(with count: String)
     func getBoolForCartImage()
+    func getCartImage()
     var cartManager: CartManager? { get }
 }
 
@@ -38,6 +39,12 @@ class DetailViewInteractor: DetailViewInteractorInputProtocol {
             presenter.displayNutInfo(with: nut, imageData: imageData)
         }
         getBoolForCartImage()
+    }
+    
+    func getCartImage() {
+        CartManager.shared.getInformationAboutCartEmptyness { [weak self] (bool) in
+            self?.presenter.displayCartImage(with: bool)
+        }
     }
     
     func addNutToCart(with count: String) {

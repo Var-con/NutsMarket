@@ -15,6 +15,7 @@ class OrderViewPresenter: OrderVCOutputProtocol {
     
     unowned var view: OrderVCInputProtocol
     var interactor: OrderViewInteractorInputProtocol!
+    var router: OrderViewRouterProtocol!
     var orderedNutsCount: Int {
         return nutsInCart.count
     }
@@ -41,8 +42,10 @@ class OrderViewPresenter: OrderVCOutputProtocol {
     func getOrderedNutsList() {
         interactor.getOrderList()
     }
-
-
+    
+    func openMakingOrder() {
+        router.openMakingOrderVC()
+    }
     
 }
 
@@ -50,6 +53,7 @@ class OrderViewPresenter: OrderVCOutputProtocol {
 extension OrderViewPresenter: OrderViewInteractorOutputProtocol {
     func nutsOrderedListDidReceive(nuts: [OrderNut]) {
         self.nutsInCart = nuts
+        view.getPrice(from: self.nutsInCart)
         view.reloadData()
     }
     

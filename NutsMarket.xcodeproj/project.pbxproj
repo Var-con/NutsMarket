@@ -16,6 +16,9 @@
 		B31B50A925080516004954CD /* RegisterViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B50A825080516004954CD /* RegisterViewConfigurator.swift */; };
 		B31B50AB2508E935004954CD /* MainPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B50AA2508E935004954CD /* MainPageRouter.swift */; };
 		B31D929425149FDD00EF10EF /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D929325149FDD00EF10EF /* OrderTableViewController.swift */; };
+		B32184EC2533741B00A48449 /* MakingOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32184EB2533741B00A48449 /* MakingOrderViewController.swift */; };
+		B32184F02533742A00A48449 /* MakingOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32184EF2533742A00A48449 /* MakingOrderPresenter.swift */; };
+		B32184F42533743300A48449 /* MakingOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32184F32533743300A48449 /* MakingOrderInteractor.swift */; };
 		B33D383925148843004A5912 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33D383825148843004A5912 /* ImageService.swift */; };
 		B34775302518F1D6004D6C5C /* OrderViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347752F2518F1D6004D6C5C /* OrderViewPresenter.swift */; };
 		B34775342518F2B0004D6C5C /* OrderViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34775332518F2B0004D6C5C /* OrderViewInteractor.swift */; };
@@ -27,6 +30,8 @@
 		B34F04FD250CFE8400C3AF08 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34F04FC250CFE8400C3AF08 /* DetailPresenter.swift */; };
 		B34F04FF250CFEFF00C3AF08 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34F04FE250CFEFF00C3AF08 /* DetailInteractor.swift */; };
 		B34F0501250D00AA00C3AF08 /* DetailViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34F0500250D00AA00C3AF08 /* DetailViewConfigurator.swift */; };
+		B3706ACF2534684E00FCACEB /* MakingOrderViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3706ACE2534684E00FCACEB /* MakingOrderViewConfigurator.swift */; };
+		B3706AD3253469FD00FCACEB /* OrderViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3706AD2253469FD00FCACEB /* OrderViewRouter.swift */; };
 		B38DBF0E2509F94200613EA3 /* ForgotenPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DBF0D2509F94200613EA3 /* ForgotenPasswordPresenter.swift */; };
 		B38DBF102509F95600613EA3 /* ForgotPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DBF0F2509F95600613EA3 /* ForgotPasswordInteractor.swift */; };
 		B38DBF122509F96900613EA3 /* ForgotPasswordConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DBF112509F96900613EA3 /* ForgotPasswordConfigurator.swift */; };
@@ -35,6 +40,7 @@
 		B3CA18742504BF63000C8578 /* RegisterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA18732504BF63000C8578 /* RegisterScreenViewController.swift */; };
 		B3CA18762504BF81000C8578 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA18752504BF81000C8578 /* ForgotPasswordViewController.swift */; };
 		B3CA18782504DA2F000C8578 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA18772504DA2F000C8578 /* ProfileViewController.swift */; };
+		B3E118242519CD8B00163E60 /* NutsName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E118232519CD8B00163E60 /* NutsName.swift */; };
 		B3E7C547250CA4440007F08B /* NutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7C546250CA4440007F08B /* NutModel.swift */; };
 		B3E7C549250CA4550007F08B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7C548250CA4550007F08B /* User.swift */; };
 		B3E7C54D250CC9D70007F08B /* MarketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7C54C250CC9D70007F08B /* MarketPresenter.swift */; };
@@ -71,6 +77,9 @@
 		B31B50A825080516004954CD /* RegisterViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewConfigurator.swift; sourceTree = "<group>"; };
 		B31B50AA2508E935004954CD /* MainPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageRouter.swift; sourceTree = "<group>"; };
 		B31D929325149FDD00EF10EF /* OrderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+		B32184EB2533741B00A48449 /* MakingOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakingOrderViewController.swift; path = NutsMarket/ViewControllers/MakingOrderView/MakingOrderViewController.swift; sourceTree = SOURCE_ROOT; };
+		B32184EF2533742A00A48449 /* MakingOrderPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakingOrderPresenter.swift; path = NutsMarket/ViewControllers/MakingOrderView/MakingOrderPresenter.swift; sourceTree = SOURCE_ROOT; };
+		B32184F32533743300A48449 /* MakingOrderInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakingOrderInteractor.swift; path = NutsMarket/ViewControllers/MakingOrderView/MakingOrderInteractor.swift; sourceTree = SOURCE_ROOT; };
 		B33D383825148843004A5912 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		B347752F2518F1D6004D6C5C /* OrderViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewPresenter.swift; sourceTree = "<group>"; };
 		B34775332518F2B0004D6C5C /* OrderViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewInteractor.swift; sourceTree = "<group>"; };
@@ -82,6 +91,8 @@
 		B34F04FC250CFE8400C3AF08 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		B34F04FE250CFEFF00C3AF08 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		B34F0500250D00AA00C3AF08 /* DetailViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewConfigurator.swift; sourceTree = "<group>"; };
+		B3706ACE2534684E00FCACEB /* MakingOrderViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MakingOrderViewConfigurator.swift; path = NutsMarket/ViewControllers/MakingOrderView/MakingOrderViewConfigurator.swift; sourceTree = SOURCE_ROOT; };
+		B3706AD2253469FD00FCACEB /* OrderViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewRouter.swift; sourceTree = "<group>"; };
 		B38DBF0D2509F94200613EA3 /* ForgotenPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotenPasswordPresenter.swift; sourceTree = "<group>"; };
 		B38DBF0F2509F95600613EA3 /* ForgotPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordInteractor.swift; sourceTree = "<group>"; };
 		B38DBF112509F96900613EA3 /* ForgotPasswordConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordConfigurator.swift; sourceTree = "<group>"; };
@@ -92,6 +103,7 @@
 		B3CA18732504BF63000C8578 /* RegisterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewController.swift; sourceTree = "<group>"; };
 		B3CA18752504BF81000C8578 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		B3CA18772504DA2F000C8578 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B3E118232519CD8B00163E60 /* NutsName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutsName.swift; sourceTree = "<group>"; };
 		B3E7C546250CA4440007F08B /* NutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutModel.swift; sourceTree = "<group>"; };
 		B3E7C548250CA4550007F08B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B3E7C54C250CC9D70007F08B /* MarketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPresenter.swift; sourceTree = "<group>"; };
@@ -171,6 +183,7 @@
 				B34775332518F2B0004D6C5C /* OrderViewInteractor.swift */,
 				B3477539251903C0004D6C5C /* OrderProductTableViewCell.swift */,
 				B347753F251909B2004D6C5C /* OrderViewConfigurator.swift */,
+				B3706AD2253469FD00FCACEB /* OrderViewRouter.swift */,
 			);
 			path = OrderView;
 			sourceTree = "<group>";
@@ -237,6 +250,7 @@
 				B34F04FB250CFE6D00C3AF08 /* DetailView */,
 				B31D928C25149F3D00EF10EF /* OrderView */,
 				B3CA18772504DA2F000C8578 /* ProfileViewController.swift */,
+				B3D768D225337358002CE61F /* New Group */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -248,6 +262,17 @@
 				B3EFF8C024F82C7D00589626 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B3D768D225337358002CE61F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				B32184EB2533741B00A48449 /* MakingOrderViewController.swift */,
+				B32184EF2533742A00A48449 /* MakingOrderPresenter.swift */,
+				B32184F32533743300A48449 /* MakingOrderInteractor.swift */,
+				B3706ACE2534684E00FCACEB /* MakingOrderViewConfigurator.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		B3E7C54A250CA45A0007F08B /* Models */ = {
@@ -301,6 +326,7 @@
 				B3CA187F2504DD8A000C8578 /* Storyboards */,
 				B3EFF8C324F82C7D00589626 /* Info.plist */,
 				B3CA18712504BCA8000C8578 /* GoogleService-Info.plist */,
+				B3E118232519CD8B00163E60 /* NutsName.swift */,
 			);
 			path = NutsMarket;
 			sourceTree = "<group>";
@@ -473,22 +499,27 @@
 				B34775302518F1D6004D6C5C /* OrderViewPresenter.swift in Sources */,
 				B34F04FA250CFD3700C3AF08 /* DetailsViewController.swift in Sources */,
 				B34F04FF250CFEFF00C3AF08 /* DetailInteractor.swift in Sources */,
+				B32184EC2533741B00A48449 /* MakingOrderViewController.swift in Sources */,
 				B31B50AB2508E935004954CD /* MainPageRouter.swift in Sources */,
 				B347753A251903C0004D6C5C /* OrderProductTableViewCell.swift in Sources */,
 				B3EFF8BA24F82C7B00589626 /* MainPageView.swift in Sources */,
 				B3E7C54D250CC9D70007F08B /* MarketPresenter.swift in Sources */,
 				B3CA18762504BF81000C8578 /* ForgotPasswordViewController.swift in Sources */,
+				B32184F42533743300A48449 /* MakingOrderInteractor.swift in Sources */,
 				B34775342518F2B0004D6C5C /* OrderViewInteractor.swift in Sources */,
 				B34D535F2511EB1C000442DE /* CartServices.swift in Sources */,
 				B3E7C555250CD6D80007F08B /* ProductCollectionViewCell.swift in Sources */,
 				B31D929425149FDD00EF10EF /* OrderTableViewController.swift in Sources */,
 				B31B50A725080500004954CD /* RegisterViewInteractor.swift in Sources */,
 				B347754425190AA9004D6C5C /* DetailViewRouter.swift in Sources */,
+				B3706ACF2534684E00FCACEB /* MakingOrderViewConfigurator.swift in Sources */,
+				B32184F02533742A00A48449 /* MakingOrderPresenter.swift in Sources */,
 				B3EFF8B624F82C7B00589626 /* AppDelegate.swift in Sources */,
 				B3E7C547250CA4440007F08B /* NutModel.swift in Sources */,
 				B3E7C54F250CC9E10007F08B /* MarketInteractor.swift in Sources */,
 				B31B50A5250804F1004954CD /* RegisterViewPresenter.swift in Sources */,
 				B38DBF102509F95600613EA3 /* ForgotPasswordInteractor.swift in Sources */,
+				B3706AD3253469FD00FCACEB /* OrderViewRouter.swift in Sources */,
 				B31B509E2507F24F004954CD /* MainPagePresenter.swift in Sources */,
 				B33D383925148843004A5912 /* ImageService.swift in Sources */,
 				B3CA18782504DA2F000C8578 /* ProfileViewController.swift in Sources */,
@@ -496,6 +527,7 @@
 				B38DBF0E2509F94200613EA3 /* ForgotenPasswordPresenter.swift in Sources */,
 				B31B50A22507FCD0004954CD /* MainPageViewConfigurator.swift in Sources */,
 				B34F0501250D00AA00C3AF08 /* DetailViewConfigurator.swift in Sources */,
+				B3E118242519CD8B00163E60 /* NutsName.swift in Sources */,
 				B31B50A02507F2E0004954CD /* MainPageViewControllerInteractor.swift in Sources */,
 				B3E7C551250CC9F00007F08B /* MatketConfigurator.swift in Sources */,
 				B3CA18742504BF63000C8578 /* RegisterScreenViewController.swift in Sources */,

@@ -17,7 +17,7 @@ class CartManager {
     func addNutToCart(nut: NutItem, count: Int) {
         guard let user = Auth.auth().currentUser else { return }
         let ref = Database.database().reference(withPath: "\(user.uid)").child("cart").child("\(nut.name)")
-        ref.setValue(["nutName" : nut.name, "nutPrice" : nut.price, "nutCount" : count])
+        ref.setValue(["nutName" : nut.name, "nutPrice" : nut.price, "nutCount" : count, "imageUrl" : nut.imageUrl])
     }
     
     func getInformationAboutCartEmptyness(complitionHandler: @escaping (_ exist: Bool) -> Void) {
@@ -31,17 +31,19 @@ class CartManager {
         }
     
     
-    func getOrderFromCart() -> [OrderNut]{
+    func getOrderFromCart(complitionHandler: @escaping (_ exist: [OrderNut]) -> Void ) {
         var orderedNuts: [OrderNut] = []
-        guard let user = Auth.auth().currentUser else { return [] }
+        guard let user = Auth.auth().currentUser else { return }
         let ref = Database.database().reference(withPath: "\(user.uid)").child("cart")
+//            .child(nutsName.grecNut.rawValue)
         ref.observe(.value) { (dataSnapshot) in
             for item in dataSnapshot.children {
-                let nut = OrderNut(snapshot: item as! FirebaseDatabase.DataSnapshot)
+                print(item)
+                let nut = OrderNut(snapshot: (item as! FirebaseDatabase.DataSnapshot))
                 orderedNuts.append(nut)
             }
+            complitionHandler(orderedNuts)
         }
-        return orderedNuts
     }
     
 }

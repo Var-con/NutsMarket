@@ -10,6 +10,7 @@ import Foundation
 import Firebase
 
 struct NutItem {
+
     let name: String
     let description: String
     let price: Int
@@ -32,20 +33,21 @@ struct NutItem {
         imageUrl = snapshotValue["imageUrl"] as! String
         ref = snapshot.ref
     }
-    
 }
 
 
 struct OrderNut {
+    let imageUrl: String
+    let nutCount: Int
     let nutName: String
     let nutPrice: Int
-    let nutCount: Int
     
     init(snapshot: DataSnapshot) {
         let snapshotValue = snapshot.value as! [String : AnyObject]
         
+        imageUrl = snapshotValue["imageUrl"] as! String
+        nutCount = snapshotValue["nutCount"] as! Int
         nutName = snapshotValue["nutName"] as! String
         nutPrice = snapshotValue["nutPrice"] as! Int
-        nutCount = snapshotValue["nutCount"] as! Int
     }
 }

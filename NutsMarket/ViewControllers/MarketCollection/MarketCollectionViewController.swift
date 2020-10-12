@@ -35,6 +35,11 @@ class MarketCollectionViewController: UICollectionViewController {
         presenter.getNutsCollection()
         presenter.setCartImage()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+    }
 
     @IBAction func cartButton(_ sender: UIBarButtonItem) {
         presenter.showOrderPage()
